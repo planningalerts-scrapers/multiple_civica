@@ -37,7 +37,7 @@ RSpec.describe CivicaScraper do
       expect(results).to eq expected
     end
 
-    CivicaScraper::AUTHORITIES.keys.each do |authority|
+    CivicaScraper::AUTHORITIES.each_key do |authority|
       it authority do
         test_scrape_and_save(authority)
       end

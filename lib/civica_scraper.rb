@@ -36,15 +36,16 @@ module CivicaScraper
     if period == :advertised
       page = Page::Search.advertised(page)
     else
-      date_from = if period == :lastmonth
+      date_from = case period
+                  when :lastmonth
                     Date.today << 1
-                  elsif period == :last2months
+                  when :last2months
                     Date.today << 2
-                  elsif period == :last7days
+                  when :last7days
                     Date.today - 7
-                  elsif period == :last10days
+                  when :last10days
                     Date.today - 10
-                  elsif period == :last30days
+                  when :last30days
                     Date.today - 30
                   else
                     raise "Unexpected period: #{period}"
