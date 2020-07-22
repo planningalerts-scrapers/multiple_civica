@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
-Bundler.require
+
+$LOAD_PATH << "./lib"
+
+require "civica_scraper"
 
 def scrape(authorities)
   exceptions = {}
