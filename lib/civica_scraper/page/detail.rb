@@ -77,7 +77,9 @@ module CivicaScraper
              "Refer Building Surveyor",
              "Refer Comm Services/Disability",
              "Refer Landscape Architect",
-             "Refer NSW Fire Brigade"
+             "Refer NSW Fire Brigade",
+             "Refer Roads Martime Services",
+             "Refer Heritage Advisor"
 
           { type: :ignored }
         else
