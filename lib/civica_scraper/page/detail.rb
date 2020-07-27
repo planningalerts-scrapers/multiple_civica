@@ -27,7 +27,8 @@ module CivicaScraper
 
         case stage_description
         when "Notification to Neighbours",
-             "Advert-Went/Courier 30 Days"
+             "Advert-Went/Courier 30 Days",
+             "Notification"
           {
             type: :notification,
             from: Date.strptime(opened, "%d/%m/%Y"),
@@ -58,7 +59,25 @@ module CivicaScraper
              "Referred - NSW RMS (Con)",
              "Referred - NSW RMS (Int)",
              "Ref - SREP(Syd Harbour Cat) 05",
-             "No Referrals Required"
+             "No Referrals Required",
+             "Registration",
+             "Decision",
+             "Determination Letter Posted",
+             "Referrals",
+             "Refer Development Engineer",
+             "Refer to Tree Officer",
+             "Assessment",
+             "Refer Environmental Officer",
+             "Refer Manager Traffic",
+             "Refer Devel't Assessment Unit",
+             "Waste Co-Ordinator",
+             "Refer Rural Fire Service",
+             "Information/RequestedApplicant",
+             "External Referrals",
+             "Refer Building Surveyor",
+             "Refer Comm Services/Disability",
+             "Refer Landscape Architect",
+             "Refer NSW Fire Brigade"
 
           { type: :ignored }
         else
@@ -67,7 +86,8 @@ module CivicaScraper
       end
 
       def self.extract_notification_period(doc)
-        table = doc.at("table[summary='Tasks Associated this Development Application']")
+        table = doc.at("table[summary='Tasks Associated this Development Application']") ||
+                doc.at("table[summary='Tasks Associated with this Development Application']")
 
         events = table.search("tr").map do |tr|
           values = tr.search("td").map(&:inner_text)

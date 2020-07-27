@@ -75,6 +75,11 @@ module CivicaScraper
       url: "https://eservices.woollahra.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=5270",
       period: :advertised,
       notice_period: true
+    },
+    lane_cove: {
+      url: "http://ecouncil.lanecove.nsw.gov.au/eservice/dialog/daEnquiryInit.do?doc_type=8&nodeNum=2807",
+      period: :last30days,
+      notice_period: true
     }
   }.freeze
 end
