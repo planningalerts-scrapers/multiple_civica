@@ -209,12 +209,6 @@
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-05-07'
   date_scraped: '2019-05-15'
-- council_reference: 1099/2019
-  address: 15 Sawgrass View GNANGARA WA 6077
-  description: Single Dwelling
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-05-07'
-  date_scraped: '2019-05-15'
 - council_reference: 1100/2019
   address: 9 Lahinch Vista GNANGARA WA 6077
   description: Single Dwelling
@@ -464,7 +458,7 @@
   date_scraped: '2019-05-15'
 - council_reference: 507/2019
   address: 176 Graceful Boulevard ALKIMOS WA 6038
-  description: Single Dwelling
+  description: CANCELLD Single Dwelling
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-04-23'
   date_scraped: '2019-05-15'
@@ -476,7 +470,8 @@
   date_scraped: '2019-05-15'
 - council_reference: 512/2019
   address: 120 Clubhouse Lane GNANGARA WA 6077
-  description: Demolish Clubhouse/ Additions - Change Rooms, Pro Shop & Buggy Store
+  description: Modifications and Additions to Golf Course (Relocation of Change Rooms
+    and Pro Shop, and Expansion of Function Centre and Car Park)
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-04-24'
   date_scraped: '2019-05-15'
@@ -500,7 +495,7 @@
   date_scraped: '2019-05-15'
 - council_reference: 520/2019
   address: 12 Coolamine Close CARRAMAR WA 6031
-  description: Single House Addition Retaining Wall
+  description: Single House Addition (Retaining Wall)
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-04-29'
   date_scraped: '2019-05-15'
@@ -536,18 +531,6 @@
   date_scraped: '2019-05-15'
 - council_reference: 539/2019
   address: 13 Muirfield Loop GNANGARA WA 6077
-  description: Retirement Village (Amendment to DAP/15/00934 and DA2018/1531)
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-05-01'
-  date_scraped: '2019-05-15'
-- council_reference: 540/2019
-  address: 25 Sawgrass View GNANGARA WA 6077
-  description: Retirement Village (Amendment to DAP/15/00934 and DA2018/1531)
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-05-01'
-  date_scraped: '2019-05-15'
-- council_reference: 541/2019
-  address: 17 Sawgrass View GNANGARA WA 6077
   description: Retirement Village (Amendment to DAP/15/00934 and DA2018/1531)
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-05-01'
@@ -673,27 +656,15 @@
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-05-08'
   date_scraped: '2019-05-15'
-- council_reference: 588/2019
-  address: 27 Sawgrass View GNANGARA WA 6077
-  description: Retirement Village (Amendment to DAP/15/00934 and DA2018/1531)
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-05-08'
-  date_scraped: '2019-05-15'
-- council_reference: 589/2019
-  address: 13 Sawgrass View GNANGARA WA 6077
-  description: Retirement Village (Amendment to DAP/15/00934 and DA2018/1531)
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-05-08'
-  date_scraped: '2019-05-15'
 - council_reference: 590/2019
   address: 15 Gouldian Circuit ALKIMOS WA 6038
-  description: Multiple Dwellings (Extension of time to DA2017/762)
+  description: Six Multiple Dwellings (Extension of Time) (Amendment to DA2017/762)
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-05-09'
   date_scraped: '2019-05-15'
 - council_reference: 591/2019
   address: 1 Graceful Boulevard ALKIMOS WA 6038
-  description: Proposed Gymnasium
+  description: Recreation Centre and Shop
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-05-09'
   date_scraped: '2019-05-15'
@@ -884,7 +855,7 @@
   date_received: '2019-04-17'
   date_scraped: '2019-05-15'
 - council_reference: 951/2019
-  address: 6 Hollosy Way ASHBY WA 6065
+  address: Unit 1 6 Hollosy Way ASHBY WA 6065
   description: Commercial Development - 7x single storey retail/commercial tennancies
     and car parking bays.
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
@@ -969,12 +940,6 @@
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-04-18'
   date_scraped: '2019-05-15'
-- council_reference: 971/2019
-  address: 27 Sawgrass View GNANGARA WA 6077
-  description: Single Dwelling
-  info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
-  date_received: '2019-04-18'
-  date_scraped: '2019-05-15'
 - council_reference: 973/2019
   address: 9 Muirfield Loop GNANGARA WA 6077
   description: Single Dwelling
@@ -989,7 +954,7 @@
   date_scraped: '2019-05-15'
 - council_reference: 976/2019
   address: 24 Media Crescent BANKSIA GROVE WA 6031
-  description: Single Dwelling
+  description: CANCELLED Single Dwelling
   info_url: https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047
   date_received: '2019-04-18'
   date_scraped: '2019-05-15'
