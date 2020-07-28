@@ -31,7 +31,9 @@ module CivicaScraper
     },
     burwood: {
       url: "https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=219",
-      period: :last7days
+      period: :last7days,
+      # Looks like they're geoblocking non australian web requests. Sigh.
+      australian_proxy: true
     },
     nambucca: {
       url:

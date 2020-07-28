@@ -27,10 +27,17 @@ module CivicaScraper
 
   def self.scrape_period(
     url:, period:, disable_ssl_certificate_check: false,
-    notice_period: false
+    notice_period: false, australian_proxy: false
   )
     agent = Mechanize.new
     agent.verify_mode = OpenSSL::SSL::VERIFY_NONE if disable_ssl_certificate_check
+    if australian_proxy
+      # On morph.io set the environment variable MORPH_AUSTRALIAN_PROXY to
+      # http://morph:password@au.proxy.oaf.org.au:8888 replacing password with
+      # the real password.
+      agent.agent.set_proxy(ENV["MORPH_AUSTRALIAN_PROXY"])
+    end
+
     page = agent.get(url)
 
     # If we're already on a list of advertised applications don't search
