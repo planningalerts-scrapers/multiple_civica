@@ -33,25 +33,28 @@ module CivicaScraper
     agent.verify_mode = OpenSSL::SSL::VERIFY_NONE if disable_ssl_certificate_check
     page = agent.get(url)
 
-    if period == :advertised
-      page = Page::Search.advertised(page)
-    else
-      date_from = case period
-                  when :lastmonth
-                    Date.today << 1
-                  when :last2months
-                    Date.today << 2
-                  when :last7days
-                    Date.today - 7
-                  when :last10days
-                    Date.today - 10
-                  when :last30days
-                    Date.today - 30
-                  else
-                    raise "Unexpected period: #{period}"
-                  end
-      date_to = Date.today
-      page = Page::Search.period(page, date_from, date_to)
+    # If we're already on a list of advertised applications don't search
+    unless url =~ /currentlyAdvertised\.do/
+      if period == :advertised
+        page = Page::Search.advertised(page)
+      else
+        date_from = case period
+                    when :lastmonth
+                      Date.today << 1
+                    when :last2months
+                      Date.today << 2
+                    when :last7days
+                      Date.today - 7
+                    when :last10days
+                      Date.today - 10
+                    when :last30days
+                      Date.today - 30
+                    else
+                      raise "Unexpected period: #{period}"
+                    end
+        date_to = Date.today
+        page = Page::Search.period(page, date_from, date_to)
+      end
     end
 
     Page::Index.scrape(page) do |record|
