@@ -33,10 +33,6 @@ module CivicaScraper
       url: "https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=219",
       period: :last7days
     },
-    wollondilly: {
-      url: "https://ecouncil.wollondilly.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=40801",
-      period: :last7days
-    },
     nambucca: {
       url:
         "https://eservices.nambucca.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=2811",
