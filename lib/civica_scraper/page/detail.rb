@@ -32,7 +32,7 @@ module CivicaScraper
           {
             type: :notification,
             from: Date.strptime(opened, "%d/%m/%Y"),
-            to: Date.strptime(completed_date, "%d/%m/%Y")
+            to: (Date.strptime(completed_date, "%d/%m/%Y") if completed_date != "")
           }
         when nil
           { type: :ignored }
@@ -79,7 +79,11 @@ module CivicaScraper
              "Refer Landscape Architect",
              "Refer NSW Fire Brigade",
              "Refer Roads Martime Services",
-             "Refer Heritage Advisor"
+             "Refer Heritage Advisor",
+             "Advertised  - WMC Website",
+             "Advertised - WMC Web & WC",
+             "Referred - NSW LicensingPolice",
+             "Advert-WentCourier 30 Days"
 
           { type: :ignored }
         else
