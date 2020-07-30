@@ -54,7 +54,10 @@ module CivicaScraper
     },
     tea_tree_gully: {
       url: "https://www.ecouncil.teatreegully.sa.gov.au/eservice/daEnquiryInit.do?nodeNum=131612",
-      period: :lastmonth
+      period: :lastmonth,
+      # One of the intermediate certificates had expired. So rather than waiting
+      # for them to fix this just...
+      disable_ssl_certificate_check: true
     },
     loxton_waikerie: {
       url: "https://eservices.loxtonwaikerie.sa.gov.au/eservice/daEnquiryInit.do?nodeNum=2811",
