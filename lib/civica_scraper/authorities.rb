@@ -56,7 +56,7 @@ module CivicaScraper
       notice_period: true
     },
     lane_cove: {
-      url: "http://ecouncil.lanecove.nsw.gov.au/eservice/dialog/daEnquiryInit.do?doc_type=8&nodeNum=2807",
+      url: "https://ecouncil.lanecove.nsw.gov.au/eservice/dialog/daEnquiryInit.do?doc_type=8&nodeNum=6636",
       period: :last30days,
       notice_period: true
     }
