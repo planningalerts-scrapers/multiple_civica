@@ -38,7 +38,9 @@ module CivicaScraper
     nambucca: {
       url:
         "https://eservices.nambucca.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=2811",
-      period: :last10days
+      period: :last10days,
+      # Because of incomplete certificate chain
+      disable_ssl_certificate_check: true
     },
     cairns: {
       url: "https://eservices.cairns.qld.gov.au/eservice/daEnquiryInit.do?nodeNum=227",
