@@ -91,7 +91,8 @@ module CivicaScraper
              "Refer Manager, Open Space",
              "Refer Manager Bushland",
              "Refer Planning NSW",
-             "Refer Heritage Office"
+             "Refer Heritage Office",
+             "Refer Strategic Planner"
 
           { type: :ignored }
         else
