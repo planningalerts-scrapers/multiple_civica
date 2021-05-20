@@ -12,7 +12,9 @@ RSpec.describe CivicaScraper do
       File.delete("./data.sqlite") if File.exist?("./data.sqlite")
 
       VCR.use_cassette(authority) do
-        Timecop.freeze(Date.new(2019, 5, 15)) do
+        # Vincent doesn't have any data in their system from before Dec 2020
+        date = authority == :vincent ? Date.new(2021, 3, 1) : Date.new(2019, 5, 15)
+        Timecop.freeze(date) do
           CivicaScraper.scrape_and_save(authority)
         end
       end

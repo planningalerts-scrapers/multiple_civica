@@ -2,6 +2,10 @@
 
 module CivicaScraper
   AUTHORITIES = {
+    vincent: {
+      url: "https://maps.vincent.wa.gov.au/eservice/daEnquiryInit.do?doc_typ=5&nodeNum=581",
+      period: :last30days
+    },
     wanneroo: {
       url: "https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047",
       period: :last30days,
