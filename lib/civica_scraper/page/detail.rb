@@ -83,7 +83,15 @@ module CivicaScraper
              "Advertised  - WMC Website",
              "Advertised - WMC Web & WC",
              "Referred - NSW LicensingPolice",
-             "Advert-WentCourier 30 Days"
+             "Advert-WentCourier 30 Days",
+             "Advert/Notify not required",
+             "Assessment and Report Prep",
+             "Evaluation",
+             "Report to Mgr Dev Assessment",
+             "Refer Manager, Open Space",
+             "Refer Manager Bushland",
+             "Refer Planning NSW",
+             "Refer Heritage Office"
 
           { type: :ignored }
         else
